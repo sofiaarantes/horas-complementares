@@ -26,9 +26,11 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'nome',
         'email',
         'password',
+        'tipo_usuario',
+        'ano_ingresso',
     ];
 
     /**
@@ -64,4 +66,5 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
 }
